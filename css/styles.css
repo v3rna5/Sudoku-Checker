@@ -1,0 +1,101 @@
+input {
+height: 50px;
+width: 50px;
+font-size: 24px;
+text-align: center;
+border-width: 1px;
+font-weight: bold;
+color: orange;
+
+}
+button{
+min-width: 165px;
+max-width: 165px;
+}
+
+.purplebox {
+ background-color: purple;
+ color: white;
+
+
+}
+
+body {
+/*background-repeat: no repeat;*/
+ margin: 50px;
+
+}
+
+#title {
+font-size: 95px;
+font-family: Jazz LET, fantasy;
+font-weight: bold;
+
+}
+.bottom-border {
+border-bottom:2pt solid black;
+
+}
+.right-border {
+border-right:2pt solid black;
+
+}
+
+table {
+overflow: hidden;
+}
+
+td, tr {
+padding: 1px;
+position: relative;
+outline: 0;
+}
+
+body:not(.nohover) tbody tr:hover {
+background-color: red;
+}
+
+td:hover::after,
+thead tr:not(:empty):hover::after,
+td:focus::after,
+thead tr:not(:empty):focus::after {
+content: '';
+height: 10000px;
+left: 0;
+position: absolute;
+top: -5000px;
+width: 100%;
+z-index: -1;
+}
+
+td:hover::after,
+tr:hover::after {
+background-color: red;
+}
+
+td:focus::after,
+tr:focus::after {
+background-color: lightblue;
+}
+.box1, .box3, .box5, .box7, .box9 {
+background-color: #ecf0f1;
+}
+
+.preset {
+ color: black;
+ font-weight: bold;
+
+}
+
+.presetHint {
+ color: blue;
+ font-weight: bold;
+
+}
+
+#time {
+text-align: center;
+border-style: ridge;
+width: 165px;
+height: 46px;
+}
